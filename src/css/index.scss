@@ -1,0 +1,42 @@
+@import './flex.scss';
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,p,ul,li{
+  margin: 0;
+  padding: 0;
+}
+ul,li{
+  list-style: none;
+}
+
+.b-black{
+  border:1px solid #000;
+}
+
+.container{
+  padding: 12px;
+}
+hr{
+  border: 0;
+  height: 0;
+  margin: 0;
+  background: none;
+}
+.rdiv{
+  position: relative;
+}
+.h30{
+  position: relative;
+  min-height: 30px;
+}
+.border-rd{
+  &:after{
+    border-radius: 4px;
+  }
+}
+.m-5{
+  margin:0 5px;
+}

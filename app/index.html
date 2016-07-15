@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>样式测试</title>
+    <link rel="stylesheet" href="../css/index.css">
+  </head>
+  <body>
+    <main class="container box">
+      兼容情况
+      <img src="http://img4q.duitang.com/uploads/people/201607/15/20160715135729_XTkyZ.png" class="w100">
+      <h3 class="f16">字体大小</h3>
+      <div class="mb-10 pd-10 b-black">
+        <span class="f12">文章大小12 f12</span> |
+        <span class="f13">文章大小13 f13</span> |
+        <span class="f14">文章大小14 f14</span> |
+        <span class="f15">文章大小15 f15</span> |
+        <span class="f16">文章大小16 f16</span> |
+        <span class="f17">文章大小17 f17</span>
+      </div>
+      <h3 class="f16">颜色</h3>
+      <div class="mb-10 pd-10 b-black">
+        <span class="color-d1">颜色 .color-d1</span> |
+        <span class="color-d2">颜色 .color-d2</span> |
+        <span class="color-d3">颜色 .color-d3</span> |
+        <span class="color-d4">颜色 .color-d4</span> |
+        <span class="color-d5">颜色 .color-d5</span> |
+        <span class="color-d6">颜色 .color-d6</span> |
+        <span class="color-d7">颜色 .color-d7</span> |
+        <span class="color-d8">颜色 .color-d8</span>
+      </div>
+      <h3 class="f16 mb-10">边框</h3>
+      <div class="box line mb-10 pd-10">
+        四周边框 0.5px .line
+      </div>
+      <div class="box line mb-10 pd-10 border-rd">
+        四周边框 0.5px 圆角矩形
+      </div>
+
+      <div class="mb-10 pd-10 h30">
+        <hr class="line-t mb-10"/>
+        上边框 .line-t
+      </div>
+      <div class="mb-10 pd-10 h30">
+        <hr class="line-l mb-10"/>
+        左边框 .line-l
+      </div>
+      <div class="mb-10 pd-10 h30">
+        底边框 .line-b
+        <hr class="line-b mt-10"/>
+      </div>
+      <div class="mb-10 pd-10 h30">
+        <hr class="line-r mb-10"/>
+        右边框 .line-r
+      </div>
+      <h3 class="f17 mb-10">水平 flex flex-h(默认)</h3>
+      <h3 class="f14 mb-10">flex 1:1:1</h3>
+      <div class="box flex b-black pd-10 mb-10">
+        <div class="flex fx1 b-black m-5">
+          比例1
+        </div>
+        <div class="flex fx1 b-black m-5">
+          比例1
+        </div>
+        <div class="flex fx1 b-black m-5">
+          比例1
+        </div>
+      </div>
+      <h3 class="f14 mb-10">flex 1:2:1</h3>
+      <div class="box flex b-black pd-10 mb-10">
+        <div class="flex fx1 b-black m-5">
+          比例1
+        </div>
+        <div class="flex fx2 b-black m-5">
+          比例1
+        </div>
+        <div class="flex fx1 b-black m-5">
+          比例1
+        </div>
+      </div>
+      <h3 class="f16 mb-10">垂直方向 flex flex-v</h3>
+      <div class="box flex b-black pd-10 mb-10 flex-v">
+        <div class="flex fx1 b-black mb-10">
+          比例1
+        </div>
+        <div class="flex fx2 b-black mb-10">
+          比例1
+        </div>
+        <div class="flex fx1 b-black">
+          比例1
+        </div>
+      </div>
+      <h3 class="f16 mb-10">文章方向</h3>
+      <h3 class="f14 mb-10">水平居中 flex flex-txth-c</h3>
+      <div class="box flex b-black pd-10 mb-10 flex-txth-c">
+        文字居中
+      </div>
+      <h3 class="f14 mb-10">垂直居中 flex flex-txtv-c</h3>
+      <div class="box flex b-black pd-10 mb-10 flex-txtv-c">
+        文字居中
+      </div>
+      <h3 class="f14 mb-10">绝对方向 flex flex-txth-c flex-txtv-c</h3>
+      <div class="box flex b-black pd-10 mb-10 flex-txth-c flex-txtv-c" style="height:50px">
+        文字居中
+      </div>
+
+    </main>
+    <script src="http://localhost:8080/bundle.js"></script>
+  </body>
+</html>

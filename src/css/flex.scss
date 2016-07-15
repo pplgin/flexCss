@@ -1,0 +1,186 @@
+$border-color :#000;
+html{
+  font-size:62.5%;
+}
+// 颜色
+.color-d1{
+  color:#ef5454;
+}
+.color-d2{
+  color: #ff7d7d;
+}
+.color-d3{
+  color: #fa974f;
+}
+.color-d4{
+  color: #6fcf95;
+}
+.color-d5{
+  color: #999999;
+}
+.color-d6{
+  color: #3a3a3a;
+}
+.color-d7{
+  color: #d1ca57;
+}
+.color-d8{
+  color: #65cae5;
+}
+
+// 距离
+.pd-10{
+  padding: 10px;
+}
+.pd-8{
+  padding: 10px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.w100{width: 100%;}
+
+// 字体大小
+.f12{
+  font-size: 1.2rem;
+}
+.f13{
+  font-size: 1.3rem;
+}
+.f14{
+  font-size: 1.4rem;
+}
+.f15{
+  font-size: 1.5rem;
+}
+.f16{
+  font-size: 1.6rem;
+}
+.f17{
+  font-size: 1.7rem;
+}
+
+@mixin box($type){
+  box-sizing: $type;
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+}
+
+// 盒模型
+.box{
+  @include  box(border-box);
+}
+.c-box{
+  @include  box(content-box);
+}
+
+.flex{
+  display: flex;
+}
+.fx1{flex: 1;}
+.fx2{flex: 2;}
+.fx3{flex: 3;}
+
+.flex-h{
+  flex-direction: row;
+}
+.flex-v{
+  flex-direction:column;
+}
+.flex-txth-c{
+  justify-content: center;
+}
+.flex-txth-l{
+  justify-content: flex-start;
+}
+.flex-txth-r{
+  justify-content: flex-end;
+}
+.flex-txtv-c{
+  align-items: center;
+}
+.flex-txtv-t{
+  align-items:flex-start;
+}
+.flex-txtv-b{
+  align-items:flex-end;
+}
+.flex-txtv-bl{
+  align-items:baseline;
+}
+
+.fixed{
+  position: fixed;
+}
+.abs{
+  position: absolute;
+}
+
+// 0.5线条
+.line{
+  position: relative;
+  &:after{
+    content: '';
+    @extend .abs;
+    top: 0;
+    left: 0;
+    border: 1px solid $border-color;
+    @include box(border-box);
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+  }
+}
+
+.line-t{
+  position: relative;
+  display: block;
+  width: 200%;
+  border-top: 1px solid $border-color;
+  @include box(border-box);
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform-origin: left top;
+  -webkit-transform-origin: left top;
+}
+.line-b{
+  position: relative;
+  display: block;
+  width: 200%;
+  border-bottom: 1px solid $border-color;
+  @include box(border-box);
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform-origin: left bottom;
+  -webkit-transform-origin:left bottom;
+}
+.line-l{
+  position: absolute;;
+  left: 0;
+  top: 0;
+  height: 200%;
+  border-left: 1px solid $border-color;
+  @include box(border-box);
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform-origin: top left;
+  -webkit-transform-origin: top left;
+}
+.line-r{
+  position: absolute;
+  right:0;
+  top: 0;
+  height: 200%;
+  border-right: 1px solid $border-color;
+  @include box(border-box);
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform-origin: top right;
+  -webkit-transform-origin: top right;
+}
